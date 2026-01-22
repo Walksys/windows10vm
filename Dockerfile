@@ -25,7 +25,7 @@ RUN wget https://github.com/novnc/noVNC/archive/refs/heads/master.zip -O /tmp/no
     rm -rf /tmp/novnc.zip /tmp/noVNC-master
 
 
-ENV ISO_URL="https://archive.org/download/windows-11-lite-22h2/Windows11_Lite_22H2_x64.iso"
+ENV ISO_URL="https://archive.org/download/windows-10-22h2-x64-english/windows-10-22h2-x64-english.iso"
 
 
 RUN echo '#!/bin/bash\n\
