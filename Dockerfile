@@ -25,7 +25,7 @@ RUN wget https://github.com/novnc/noVNC/archive/refs/heads/master.zip -O /tmp/no
     rm -rf /tmp/novnc.zip /tmp/noVNC-master
 
 
-ENV ISO_URL="https://archive.org/download/windows-10-22h2-x64-english/windows-10-22h2-x64-english.iso"
+ENV ISO_URL="https://archive.org/download/windows-10-lite-edition-19h2-x64/Windows%2010%20Lite%20Edition%2019H2%20x64.iso"
 
 
 RUN echo '#!/bin/bash\n\
@@ -54,8 +54,8 @@ fi\n\
 \n\
 # Create disk image if not exists\n\
 if [ ! -f "/data/disk.qcow2" ]; then\n\
-  echo "💽 Creating 128GB virtual disk..."\n\
-  qemu-img create -f qcow2 "/data/disk.qcow2" 128G\n\
+  echo "💽 Creating 100GB virtual disk..."\n\
+  qemu-img create -f qcow2 "/data/disk.qcow2" 100G\n\
 fi\n\
 \n\
 # Windows-specific boot parameters\n\
